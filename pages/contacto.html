@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omnia Fitness - Contacto -</title>
+    <link rel="stylesheet" href="../css/miReset.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="contenedor contenido-header">
+        <div class="barra">
+          <a href="../index.html">
+            <img
+              src="../assets/img/logo-Omnia.png"
+              alt="Logotipo Omnia Fitness"
+            />
+          </a>
+
+          <div class="mobile-menu">
+            <img src="../assets/img/barras.svg" alt="barras-menu" />
+          </div>
+
+          <div class="derecha">
+            <img
+              class="dark-mode-boton"
+              src="../assets/img/dark-mode.svg"
+              alt="dark-boton"
+            />
+            <nav class="navegacion">
+              <a href="../pages/nosotros.html">Nosotros</a>
+              <a href="../pages/anuncios.html">Anuncios</a>
+              <a href="../pages/blog.html">Blog</a>
+              <a href="../pages/contacto.html">Contacto</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--Fin Header-->
+
+    <main class="contenedor seccion">
+      <h1>Contacto</h1>
+
+      <picture>
+        <img src="../assets/img/destacada3.jpg" alt="imagen-contacto" />
+      </picture>
+
+      <h2>Rellene el formulario de Contacto</h2>
+
+      <form class="formulario">
+        <fieldset>
+          <legend>Información Personal</legend>
+
+          <label for="nombre">Nombre</label>
+          <input id="nombre" type="text" placeholder="Tu Nombre" />
+
+          <label for="email">E-mail</label>
+          <input id="email" type="email" placeholder="Tu E-mail" />
+
+          <label for="telefono">Teléfono</label>
+          <input id="telefono" type="tel" placeholder="Tu Teléfono" />
+
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje"></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Información sobre el centro</legend>
+
+          <label for="opciones">Publicita o Alquila</label>
+          <select id="opciones">
+            <option value="" disabled selected>--Seleccione--</option>
+            <option value="Compra">Alquila</option>
+            <option value="Vende">Publicita</option>
+          </select>
+
+          <label for="presupuesto">Precio</label>
+          <input id="presupuesto" type="number" placeholder="Tu Presupuesto" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Contacto</legend>
+
+          <p>Como desea ser contactado</p>
+          <div class="forma-contacto">
+            <label for="contactar-telefono">Teléfono</label>
+            <input
+              name="contacto"
+              type="radio"
+              value="telefono"
+              id="contactar-telefono"
+            />
+
+            <label for="contactar-email">E-mail</label>
+            <input
+              name="contacto"
+              type="radio"
+              value="email"
+              id="contactar-email"
+            />
+          </div>
+
+          <p>
+            Si eligió el teléfono, elija la fecha y la hora para ser contactado
+          </p>
+
+          <label for="fecha">Fecha:</label>
+          <input id="fecha" type="date" />
+
+          <label for="hora">Hora:</label>
+          <input id="hora" type="time" min="09:00" max="18:00" />
+        </fieldset>
+
+        <input type="submit" value="Enviar" class="boton-verde" />
+      </form>
+    </main>
+    <!-- Fin Main -->
+
+    <footer class="footer seccion">
+      <div class="contenedor contenedor-footer">
+        <nav class="navegacion">
+          <a href="../pages/nosotros.html">Nosotros</a>
+          <a href="../pages/anuncios.html">Anuncios</a>
+          <a href="../pages/blog.html">Blog</a>
+          <a href="../pages/contacto.html">Contacto</a>
+        </nav>
+      </div>
+      <p class="copyright">
+        Creado por Iván Pizarroso Álvarez - Todos los derechos Reservados 2022
+        &copy;
+      </p>
+    </footer>
+
+    <script src="../js/index.js"></script>
+  </body>
+</html>
